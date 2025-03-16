@@ -101,17 +101,12 @@ footer {
 .btn-secondary {
     align-content: center;
     background-color: var(--iris);
-    border-color: var(--foam);
+    border-color: var(--love);
 }
-
-.btn-project{
-    color: var(--surface);
-    background-color: var(--foam);
-    border-color: var(--rose);
-    margin: 0.5rem;
-    font-size: 1rem;
+.btn-secondary:hover {
+    background-color: var(--rose);
+    border-color: var(--love);
 }
-
 
 .btn-primary:hover {
     background-color: var(--love);
@@ -221,6 +216,24 @@ footer {
     width: 60%;
 }
 
+.btn-project{
+    color: var(--surface);
+    background-color: var(--foam);
+    /* border-color: var(--blac); */
+    border-color: var(--text);
+    /* margin: 0.5rem; */
+    font-size: 1rem;
+}
+.btn-project:hover{
+    background-color: var(--love);
+    color: var(--surface);
+}
+
+.project-item{
+    margin-bottom: 4rem;
+
+
+}
 .featured-projects {
     color: var(--gold);
     padding: 20px 0;
@@ -237,7 +250,7 @@ footer {
     color: var(--muted);
     padding: 20px 0;
     text-align: center;
-    border-top: 1px solid var(--gold);
+    border-top: 2px solid var(--rose);
 }
 
 .footer-text {
@@ -247,11 +260,11 @@ footer {
 
 .footer-links {
     margin: 10px 0 0;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .footer-links a {
-    color: var(--foam-bright);
+    color: var(--rose);
     text-decoration: none;
 }
 
