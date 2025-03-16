@@ -13,7 +13,7 @@
     --pine: #286983;
     --foam: #56949f;
     --foam-bright: #1d72a3;
-    --iris: #907aa9;
+    --iris: #a48ac2;
     --iris-bright: #9549eb;
     --highlight-low: #f4ede8;
     --highlight-med: #dfdad9;
@@ -99,8 +99,19 @@ footer {
     font-size: 1.25rem;
 }
 .btn-secondary {
+    align-content: center;
     background-color: var(--iris);
+    border-color: var(--foam);
 }
+
+.btn-project{
+    color: var(--surface);
+    background-color: var(--foam);
+    border-color: var(--rose);
+    margin: 0.5rem;
+    font-size: 1rem;
+}
+
 
 .btn-primary:hover {
     background-color: var(--love);
@@ -207,7 +218,7 @@ footer {
 }
 
 .projects-section {
-    width: 50%;
+    width: 60%;
 }
 
 .featured-projects {
@@ -221,18 +232,46 @@ footer {
     margin: 0 auto;
 }
 
+.footer {
+    background-color: var(--background);
+    color: var(--muted);
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid var(--gold);
+}
+
+.footer-text {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-links {
+    margin: 10px 0 0;
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: var(--foam-bright);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--foam);
+    text-decoration: underline;
+}
+
 @media (min-width: 768px) {
     .about-me-text {
         padding-left: 75px;
         padding-right: 75px;
     }
     .welcome-content h1 {
-        font-size: 4rem;
+        font-size: 3rem;
         white-space: nowrap;
     }
 }
 
-@media (max-width: 868px) {
+@media (max-width: 1206px) {
     .about-me-text {
         padding-top: 25px;
     }
@@ -241,8 +280,8 @@ footer {
     }
 }
 
-@media (max-width: 468px) {
+@media (max-width: 868px) {
     .welcome-content h1 {
-        font-size: 1.0rem;
+        font-size: 1.5rem;
     }
 }
