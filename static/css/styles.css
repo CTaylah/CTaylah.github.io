@@ -12,9 +12,9 @@
     --rose: #d7827e;
     --pine: #286983;
     --foam: #56949f;
-    --foam-bright: #1d72a3;
+    --foam-bright: #e2d5d5;
     --iris: #a48ac2;
-    --iris-bright: #9549eb;
+    --iris-bright: #a15fec;
     --highlight-low: #f4ede8;
     --highlight-med: #dfdad9;
     --highlight-high: #cecacd;
@@ -36,8 +36,9 @@ header h1 {
     color: var(--rose);
 }
 
-a {
-    color: var(--foam-bright);
+.inline {
+    color: var(--iris-bright);
+    text-decoration: underline;
 }
 
 .navbar {
