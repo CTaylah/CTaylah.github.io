@@ -132,6 +132,7 @@ footer {
 
 .wave {
     display: inline-block;
+    white-space: nowrap;
     animation: wave .75s infinite;
     animation-iteration-count: 2; 
 }
@@ -207,8 +208,6 @@ footer {
 
 .projects-section {
     width: 50%;
-
-
 }
 
 .featured-projects {
@@ -224,7 +223,26 @@ footer {
 
 @media (min-width: 768px) {
     .about-me-text {
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+    .welcome-content h1 {
+        font-size: 4rem;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 868px) {
+    .about-me-text {
+        padding-top: 25px;
+    }
+    .projects-section {
+        width: 90%;
+    }
+}
+
+@media (max-width: 468px) {
+    .welcome-content h1 {
+        font-size: 1.0rem;
     }
 }
