@@ -1,243 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cardell's Portfolio</title> 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #f4f4f9;
-      color: #333;
-    }
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 1rem 0;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin: 0.5rem 0 0;
-      font-size: 1.2rem;
-    }
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    h2 {
-      color: #444;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.3rem;
-    }
-    ul {
-      padding-left: 1.5rem;
-    }
-    .contact-section {
-      text-align: center;
-      margin: 2rem auto;
-      padding: 1.5rem;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      width: 60%;
-    }
-    .contact-links {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-    .contact-links a {
-      color: #4caf50;
-      text-decoration: none;
-      font-size: 1.2rem;
-      font-weight: bold;
-      padding: 10px 15px;
-      border: 2px solid #4caf50;
-      border-radius: 5px;
-      transition: all 0.3s ease-in-out;
-    }
-    .contact-links a:hover {
-      background-color: #4caf50;
-      color: #fff;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem 0;
-      background-color: #333;
-      color: #fff;
-      margin-top: 2rem;
-    }
-    footer a {
-      color: #4caf50;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-    .articles-section {
-      text-align: left;
-      margin: 2rem auto;
-      padding: 1rem;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      width: 70%;
-    }
-    .articles-section ul {
-      list-style: none;
-      padding: 0;
-    }
-    .articles-section li {
-      margin-bottom: 1.5rem;
-    }
-    .articles-section a {
-      color: #4caf50;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .articles-section a:hover {
-      text-decoration: underline;
-    }
-    .articles-section .article-title {
-      display: block;
-      margin-bottom: 0.5rem;
-    }
-    .articles-section .article-content {
-      text-align: left;
-      margin-bottom: 0.5rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>Cardell Taylor</h1>
-    <p>Computer science student</p>
-  </header>
-
-  <main>
-
-    <section>
-      <h2>Education</h2>
-      <p><strong>Grand Valley State University</strong><br>
-        Bachelor of Science in Computer Science, Minor in Mathematics (August 2022 - December 2025)<br>
-        Allendale, MI<br>
-      </p>
-    </section>
-
-    <section>
-      <h2>Experience</h2>
-      <ul>
-        <li><strong>Research Assistant</strong><br>
-          <em>August 2023 - Present</em><br>
-          Grand Valley State University, Allendale, MI<br>
-          <ul>
-            <li>Combining modern machine learning techniques to solve problems in Bioinformatics</li>
-            <li>Designing models to process and generate genomics data using variational autoencoder and GAN frameworks</li>
-            <li>Fast paced team environment prioritizing rapid iteration</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Arithmetic Compiler</strong><br>
-          <em>November 2024 - December 2024</em><br>
-          GitHub Repository: <a href="https://github.com/CTaylah/arithmetic-compiler" target="_blank">arithmetic-compiler</a><br>
-          <ul>
-            <li>Engineered a compiler for arithmetic expressions from scratch using C++</li>
-            <li>Implements and transforms several data structures; such as the parse tree, abstract syntax, and three address code</li>
-            <li>Applied graph-coloring register allocation for usage in code generation</li>
-            <li>Compiles down to x86_64 assembly</li>
-          </ul>
-        </li>
-        <li><strong>MNIST Michi-GAN</strong><br>
-          <em>August 2024</em><br>
-          GitHub Repository: <a href="https://github.com/CTaylah/mnist-michi-gan" target="_blank">mnist-michi-gan</a><br>
-          <ul>
-            <li>Exploration of the MichiGAN framework for generating disentangled representations of the MNIST dataset</li>
-            <li>Evaluated performance using common metrics like Fréchet Inception Distance (FID) and Inception Score</li>
-          </ul>
-        </li>
-        <li><strong>Autoencoder</strong><br>
-          <em>September 2023 - November 2023</em><br>
-          GitHub Repository: <a href="https://github.com/CTaylah/autoencoder" target="_blank">autoencoder</a><br>
-          <ul>
-            <li>Implemented a neural network from scratch that can be trained to compress and reconstruct image data</li>
-            <li>Implements ADAM, a modern optimization technique to reduce model convergence time</li>
-            <li>Used multithreading with OpenMP to boost performance</li>
-            <li>Later moved to Python to test adversarial feedback techniques</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Extracurricular</h2>
-      <ul>
-        <li><strong>Research Coordinator</strong><br>
-          <em>August 2024</em><br>
-          GVSU Computing Club<br>
-          <ul>
-            <li>Keeping members informed on different research opportunities offered to students</li>
-            <li>Connecting students interested in research with faculty mentors</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Grants/Awards</h2>
-      <ul>
-        <li><strong>Student Summer Scholar Grant</strong><br>
-          <em>March 2024</em><br>
-          Grand Valley State University<br>
-          <ul>
-            <li>Grant awarded to undergraduate students to support promising projects throughout the summer semester</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Technical Skills</h2>
-      <ul>
-        <li><strong>Languages:</strong> Python, C, C++, Java, C#, OCaml</li>
-        <li><strong>Frameworks/Libraries:</strong> JUnit, Numpy, Pytorch, Keras, Tensorflow, OpenGL, Eigen</li>
-        <li><strong>Developer Tools:</strong> Git, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse, CMake, Premake</li>
-      </ul>
-    </section>
-  </main>
-
-  <section class="contact-section">
-    <h2>Connect with Me!</h2>
-    <div class="contact-links">
-      <a href="https://www.linkedin.com/in/cardell-taylor/" target="_blank">
-        <strong>LinkedIn</strong>
-      </a>
-      <a href="https://github.com/CTaylah" target="_blank">
-        <strong>GitHub</strong>
-      </a>
+    <div id="welcome-screen" class="welcome-screen">
+        <div class="welcome-content">
+            <h1>
+                Hello, my name is 
+                <span class="wave">C</span><span class="wave">a</span><span class="wave">r</span><span class="wave">d</span><span class="wave">e</span><span class="wave">l</span><span class="wave">l</span> 
+                <span class="wave">T</span><span class="wave">a</span><span class="wave">y</span><span class="wave">l</span><span class="wave">o</span><span class="wave">r</span>.
+            </h1>
+            <h1>
+                I'm a computer science student.
+            </h1>
+            <button class="btn btn-primary" id="scroll-button">Check me out!</button>
+        </div>
     </div>
-  </section>
 
-  <footer>
-    <p>© 2023 Cardell Taylor | <a href="https://github.com/CTaylah" target="_blank">GitHub</a></p>
-  </footer>
+    <div id="about-me-section" class="about-me-section">
+        <div class="container">
+            <h2 class="about-me-title text-center">ABOUT ME</h2>
+            <div class="row align-items-center">
+                <div class="col-md-4 col-sm-12">
+                    <img src="static/img/Boricana.jpg" class="img-fluid rounded about-me-image" alt="About Me">
+                </div>
+                <div class="col-md-8 col-sm-12 about-me-text">
+                    <p>I'm a twenty year old researcher, student, artist, and amateur bread baker. I've been writing code since 8th grade.</p>
+                    <p>I'm currently working in a research lab under <a href="https://scholar.google.com/citations?user=l9qurb4AAAAJ&hl=en" target="_blank">Dr. Zachary Debruine</a>, where we develop models to analyze single-cell RNA sequencing data.</p>
+                    <p>My favorite programming languages are Python 🐍, C++<img src="static/img/cpp_logo.png" alt="C++ Logo" style="width: 30px; height: 30px;"> and Rust 🦀</p>
+                    <a href="https://github.com/CTaylah" class="btn btn-secondary" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/cardell-taylor/" class="btn btn-secondary" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 projects-section">
+        <h3 class="featured-projects">Projects</h3>
+        <div class="row mb-4">
+            <div class="col-md-8 col-sm-12">
+                <h5 class="card-title">Single-cell Integration Research</h5>
+                <p class="card-text">As years go by, the cost of collecting single-cell data gets lower and lower. However, we still lack solid methods for pooling this data together (integration). The goal of my research is to develop a deep learning model to accomplish this pooling of data, with an emphasis of integrating across species.</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <img src="static/img/mmvae.png" class="img-fluid rounded" alt="MNIST Michi-GAN">
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-8 col-sm-12">
+                <h5 class="card-title">MNIST Michi-GAN</h5>
+                <p class="card-text">Exploration of the MichiGAN framework for generating disentangled representations of the MNIST dataset, as detailed in the paper "MichiGAN: sampling from disentangled representations of single-cell data using generative adversarial networks". Evaluated performance using common metrics like Fréchet Inception Distance (FID) and Inception Score.</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <img src="static/img/cnC2yCa7.jpeg" class="img-fluid" alt="MNIST Michi-GAN">
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-8 col-sm-12">
+                <h5 class="card-title">Autoencoder</h5>
+                <p class="card-text">Implemented a neural network from scratch that can be trained to compress and reconstruct image data. Implements ADAM, a modern optimization technique reduce model convergence time. Used multithreading with OpenMP to boost performance. Later moved to python to test adversarial feedback techniques.</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <img src="static/img/Gi213xVe.jpeg" class="img-fluid" alt="Autoencoder">
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h3>Get in touch!</h3>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="static/js/scripts.js"></script>
 </body>
 </html>
