@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post | Cardell Taylor</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="icon" href="static/img/favicon.ico" type="image/x-icon">
+    <!-- Include Prism.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+</head>
+<body>
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+    </script>
+    <script src="static/js/theme-toggle.js"></script>
+    <nav class="custom-navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="blog.html">Posts</a>
+        </div>
+        <button id="theme-toggle">🌙</button>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 id="post-title" class="text-center"></h1>
+        <div id="post-content" class="mt-4"></div>
+    </div>
+
+    <!-- Include marked library -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Include Prism.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <!-- Include custom blog post script -->
+    <script src="static/js/blog-post.js"></script>
+</body>
+</html>

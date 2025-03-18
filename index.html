@@ -25,18 +25,38 @@
     <meta name="description" content="Welcome to Cardell Taylor's portfolio. Explore my projects, research, and more.">
     <meta name="keywords" content="Cardell Taylor, portfolio, computer science, projects, research, developer">
     <meta name="author" content="Cardell Taylor">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
 </head>
 <body>
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+    </script>
+    <script src="static/js/theme-toggle.js"></script>
+    <nav class="custom-navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+        </div>
+        <button id="theme-toggle">🌙</button>
+    </nav>
     <div id="welcome-screen" class="welcome-screen">
         <div class="welcome-content">
-            <h1>
+            <h1 class="hello-text">
                 Hello, my name is 
                 <span class="wave">C</span><span class="wave">a</span><span class="wave">r</span><span class="wave">d</span><span class="wave">e</span><span class="wave">l</span><span class="wave">l</span> 
                 <span class="wave">T</span><span class="wave">a</span><span class="wave">y</span><span class="wave">l</span><span class="wave">o</span><span class="wave">r</span>.
             </h1>
-            <h1>
-                I'm a computer science student.
-            </h1>
+            <div class="subtext">
+                <h1>
+                    I'm a computer science student.
+                </h1>
+            </div>
             <button class="btn btn-primary" id="scroll-button">Check me out!</button>
         </div>
     </div>
@@ -51,10 +71,11 @@
                 <div class="col-md-8 col-sm-12 about-me-text">
                     <p>I'm a twenty year old researcher, student, artist, and amateur bread baker. I've been writing code since 8th grade.</p>
                     <p>I'm currently working in a research lab under <a href="https://scholar.google.com/citations?user=l9qurb4AAAAJ&hl=en" target="_blank" class="inline">Dr. Zachary Debruine</a>, where we develop models to analyze single-cell RNA sequencing data.</p>
-                    <p>My favorite programming languages are Python 🐍, C++<img src="static/img/cpp_logo.png" alt="C++ Logo" style="width: 30px; height: 30px;"> and Rust 🦀</p>
+                    <p>My favorite programming languages are Python 🐍, C++ <img src="static/img/cpp_logo.png" alt="C++ Logo" style="width: 30px; height: 30px;"> and Rust 🦀.</p>
                     <a href="https://github.com/CTaylah" class="btn btn-secondary" target="_blank">GitHub</a>
                     <a href="https://www.linkedin.com/in/cardell-taylor/" class="btn btn-secondary" target="_blank">LinkedIn</a>
                     <a href="static/Main_Resume.pdf" class="btn btn-secondary" target="_blank">Resume</a>
+                    <a href="blog.html" class="btn btn-secondary">Blog</a>
                 </div>
             </div>
         </div>
@@ -101,9 +122,6 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="static/js/scripts.js"></script>
 </body>
 </html>

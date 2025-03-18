@@ -1,4 +1,8 @@
-/* Rose-Pine Dawn Theme Colors */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+/* Light Mode */
 :root {
     --background: #faf4ed;
     --surface: #fffaf3;
@@ -14,16 +18,52 @@
     --foam: #56949f;
     --foam-bright: #e2d5d5;
     --iris: #a48ac2;
-    --iris-bright: #a15fec;
+    --iris-bright: #8847d3;
     --highlight-low: #f4ede8;
     --highlight-med: #dfdad9;
     --highlight-high: #cecacd;
 }
 
+/* Dark Mode */
+body.dark-mode {
+    --background: #1e1e1e;
+    --surface: #2e2e2e;
+    --overlay: #3e3e3e;
+    --muted: #a5a5a5;
+    --subtle: #939393;
+    --text: #e5e5e5;
+    --love: #ff6f91;
+    --gold: #ffb74d;
+    --gold-subtle: #ffcc80;
+    --rose: #ff8a80;
+    --pine: #4db6ac;
+    --foam: #4dd0e1;
+    --foam-bright: #b2ebf2;
+    --iris: #ba68c8;
+    --iris-bright: #ce93d8;
+    --highlight-low: #424242;
+    --highlight-med: #616161;
+    --highlight-high: #757575;
+}
+
+
+@font-face {
+    font-family: "Font";
+    src: url('../fonts/IosevkaTermNerdFont-LightOblique.woff2') format(woff2);
+}
+.big-shoulders-shane {
+  font-family: "Big Shoulders", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
     background-color: var(--background);
     color: var(--text);
-    font-family: 'Raleway', sans-serif;
+    font-family:"DM Sans", sans-serif;
+    /* font-family: "Font", sans-serif; */
+    font-weight: 300;
     font-size: 20px;
     line-height: 1.6;
 }
@@ -32,34 +72,13 @@ header {
     background-color: var(--surface);
 }
 
-header h1 {
-    color: var(--rose);
+/* header h1 {
+    color: var (--rose);
 }
 
 .inline {
     color: var(--iris-bright);
     text-decoration: underline;
-}
-
-.navbar {
-    background-color: var(--highlight-low);
-}
-
-.navbar-brand, .nav-link {
-    color: var(--text) !important;
-}
-
-.nav-link:hover {
-    color: var(--foam) !important;
-}
-
-.jumbotron {
-    background-color: var(--highlight-med);
-    color: var(--text);
-}
-
-.jumbotron .display-4 {
-    color: var(--rose);
 }
 
 .list-group-item {
@@ -71,24 +90,81 @@ header h1 {
 .list-group-item:hover {
     background-color: var(--highlight-low);
 }
+/* Ensure the navbar spans the full width */
+.navbar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-color: var(--rose);
+    border-bottom-width: 1px;
+}
+
+.custom-navbar {
+    background-color: var(--background); /* Change this to your desired background color */
+    border-color: var(--rose);
+    border-style:solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 1px;
+
+    color: var(--text); /* Change this to your desired text color */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.nav-links a {
+    color: var(--text); /* Change this to your desired text color */
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 15px; /* Add some margin between the links */
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjust this value to position the underline */
+    width: 100%;
+    height: 2px;
+    background-color: var(--text);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.custom-navbar button {
+    background-color: transparent;
+    /* border-bottom-width: 1px; */
+    border-style: none;
+    color: var(--text);
+    font-size: 1.5rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.custom-navbar button:hover {
+    color: var(--rose);
+}
 
 footer {
     background-color: var(--surface);
     color: var(--muted);
-}
-
-.card {
-    background-color: var(--surface);
-    color: var(--text);
-    border: 1px solid var(--highlight-high);
-}
-
-.card-title {
-    color: var(--rose);
-}
-
-.card-text {
-    color: var(--subtle);
 }
 
 .btn-primary {
@@ -109,9 +185,14 @@ footer {
     border-color: var(--love);
 }
 
+.btn-primary:active {
+    background-color: var(--rose);
+    border-color: var(--love);
+}
+
 .btn-primary:hover {
-    background-color: var(--love);
-    border-color: var (--love);
+    background-color: var(--love) !important;
+    border-color: var(--love);
 }
 
 .welcome-screen {
@@ -127,6 +208,7 @@ footer {
 
 .welcome-content {
     text-align: center;
+    font-family: "Fira Code", sans-serif;
 }
 
 .welcome-content h1 {
@@ -138,6 +220,7 @@ footer {
 }
 
 .wave {
+    font-style: italic;
     display: inline-block;
     white-space: nowrap;
     animation: wave .75s infinite;
@@ -214,7 +297,8 @@ footer {
 }
 
 .projects-section {
-    width: 60%;
+    width: 50%;
+    /* background-color: var(--surface); */
 }
 
 .btn-project{
@@ -235,8 +319,13 @@ footer {
 
 
 }
+.card-title{
+    color: var(--rose);
+    font-weight: bold;
+}
 .featured-projects {
     color: var(--gold);
+    font-size: 1.6rem;
     padding: 20px 0;
     font-weight: bold;
 }
@@ -272,6 +361,64 @@ footer {
 .footer-links a:hover {
     color: var(--foam);
     text-decoration: underline;
+}
+
+pre {
+    background-color: var(--highlight-low);
+    font-family: 'Fira Code', monospace;
+    border-radius: 20px;
+    border: 1px solid var(--highlight-high);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+pre code {
+
+    font-size: 5px;
+    display: block;
+}
+
+code{
+    font-family: 'Font';
+}
+
+.blog-post-list{
+    margin: 0 auto;
+    padding: 20px 0;
+    font-size: 1.2em;
+    line-height: 3.0;
+    width: 50%;
+}
+
+/* Blog Post List Styles */
+#blog-list {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+}
+
+#blog-list li {
+    background-color: var(--surface); /* Background color for each list item */
+    border: 1px solid var(--highlight-high); /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    margin: 10px 0; /* Space between list items */
+    padding: 15px; /* Padding inside each list item */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#blog-list li:hover {
+    background-color: var(--highlight-low); /* Background color on hover */
+}
+
+#blog-list a {
+    color: var(--text); /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Font weight */
+    display: block; /* Make the link cover the entire list item */
+}
+
+#blog-list a:hover {
+    color: var(--rose); /* Text color on hover */
 }
 
 @media (min-width: 768px) {
