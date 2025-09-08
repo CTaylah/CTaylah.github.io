@@ -106,7 +106,8 @@ header {
     border-top-width: 0px;
     border-right-width: 0px;
     border-left-width: 0px;
-    border-bottom-width: 1px;
+    border-bottom-width: 0px;
+    /* border-bottom-width: 1px; */
 
     color: var(--text); /* Change this to your desired text color */
     width: 100%;
@@ -297,8 +298,16 @@ footer {
 }
 
 .projects-section {
-    width: 50%;
+    width: 55%;
     /* background-color: var(--surface); */
+}
+
+.project-image {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    aspect-ratio: 16 / 9; /* Enforce 16:9 aspect ratio */
+    object-fit: cover; /* Ensure the image fills the container */
+    border-radius: 8px; /* Optional: Add rounded corners */
 }
 
 .btn-project{
