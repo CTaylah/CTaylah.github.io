@@ -80,39 +80,119 @@
         </div>
     </div>
     <div class="container mt-5 projects-section">
-        <h3 class="featured-projects">Projects</h3>
-        <div class="row mb-4 project-item">
-            <div class="col-md-8 col-sm-12 project-item">
-                <h5 class="card-title">Single-cell Integration Research</h5>
-                <p class="card-text">As years go by, the cost of collecting single-cell data gets lower and lower. However, we still lack solid methods for pooling this data together (integration). The goal of my research is to develop a deep learning model to accomplish this pooling of data, with an emphasis of integrating across species.</p>
-                <a href="https://github.com/zdebruine/MMVAE" class="btn btn-project" target="_blank">Source Code</a>
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <img src="static/img/mmvae.png" class="img-fluid rounded" alt="MNIST Michi-GAN">
-            </div>
+    <h3 class="featured-projects">Projects</h3>
+
+    <div class="row mb-4 project-item">
+        <div class="col-md-8 col-sm-12 project-item">
+            <h5 class="card-title">Second Mind</h5>
+            <p class="card-text">
+               A local LLM assistant for retrieving information from Obsidian/Markdown notes. It uses retrieval-augmented generation to enable context-aware querying. It locally hosting your own LLM model via Ollama to preserve privacy.
+            </p>
+            <a href="" class="btn btn-project" target="_blank">WIP</a>
         </div>
-        <div class="row mb-4">
-            <div class="col-md-8 col-sm-12 project-item">
-                <h5 class="card-title">MNIST Michi-GAN</h5>
-                <p class="card-text">Exploration of the MichiGAN framework for generating disentangled representations of the MNIST dataset, as detailed in the paper "MichiGAN: sampling from disentangled representations of single-cell data using generative adversarial networks". Performance was evaluated Fréchet Inception Distance (FID) and Inception Score.</p>
-                <a href="https://github.com/CTaylah/vae_gan" class="btn btn-project" target="_blank">Source Code</a>
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <!-- <img src="static/img/cnC2yCa7.jpeg" class="img-fluid" alt="MNIST Michi-GAN"> -->
-                <img src="static/img/michiGAN_figure.webp" class="img-fluid project-image" alt="MNIST Michi-GAN">
-            </div>
-        </div>
-        <div class="row mb-4 project-item">
-            <div class="col-md-8 col-sm-12 project-item">
-                <h5 class="card-title">Lean-AE</h5>
-                <p class="card-text">A from-scratch C++ implementation of a variational autoencoder that can be trained to compress and reconstruct image data. Implements ADAM, a modern optimization technique reduce model convergence time. I Used multithreading with OpenMP to boost performance. This project was later ported to python to test adversarial feedback techniques.</p>
-                <a href="https://github.com/CTaylah/NeuralNetwork" class="btn btn-project" target="_blank">Source Code</a>
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <img src="static/img/NeuralNetworkScene_ManimCE_v0.19.0.gif" class="img-fluid project-image" alt="Autoencoder">
-            </div>
+        <div class="col-md-4 col-sm-12">
+            <img src="static/img/secondmind.png" class="img-fluid rounded" alt="Sim-Vest">
         </div>
     </div>
+
+    <div class="row mb-4 project-item">
+        <div class="col-md-8 col-sm-12 project-item">
+            <h5 class="card-title">Sim-Vest</h5>
+            <p class="card-text">
+                A financial investment simulator written in Rust. Allows you to create portfolios,
+                make trades, and see your performance over time. It uses the Financial Modeling Prep
+                (FMP) API to fetch stock prices in real time.
+            </p>
+            <a href="" class="btn btn-project" target="_blank">Source Code</a>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <img src="static/img/simvest.jpg" class="img-fluid rounded" alt="Sim-Vest">
+        </div>
+    </div>
+
+    <div class="row mb-4 project-item">
+        <div class="col-md-8 col-sm-12 project-item">
+            <h5 class="card-title">Capstone - SysML v2 Export Tool</h5>
+            <p class="card-text">
+                Working in the Agile project framework, assisted Array of Engineers by updating their
+                tool for modeling logical requirements. We added the ability to export data in the
+                SysML v2 format, a universal language for modeling system requirements.
+            </p>
+            <a href="" class="btn btn-project" target="_blank">Code not available</a>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <img
+                src="static/img/Array of Engineers_ SysML for Requirements Modeling.pptx.svg"
+                class="img-fluid rounded"
+                alt="SysML Export Tool"
+            >
+        </div>
+    </div>
+
+    <div class="row mb-4 project-item">
+        <div class="col-md-8 col-sm-12 project-item">
+            <h5 class="card-title">Single-cell Integration Research</h5>
+            <p class="card-text">
+                As years go by, the cost of collecting single-cell data gets lower and lower.
+                However, we still lack solid methods for pooling this data together (integration).
+                The goal of my research is to develop a deep learning model to accomplish this,
+                with an emphasis on integrating across species.
+            </p>
+            <a href="https://github.com/zdebruine/MMVAE" class="btn btn-project" target="_blank">
+                Source Code
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <img src="static/img/mmvae.png" class="img-fluid rounded" alt="MMVAE">
+        </div>
+    </div>
+
+    <div class="row mb-4 project-item">
+        <div class="col-md-8 col-sm-12 project-item">
+            <h5 class="card-title">MNIST Michi-GAN</h5>
+            <p class="card-text">
+                Exploration of the MichiGAN framework for generating disentangled representations
+                of the MNIST dataset, as detailed in the paper
+                “MichiGAN: sampling from disentangled representations of single-cell data using
+                generative adversarial networks”. Performance was evaluated using Fréchet Inception
+                Distance (FID) and Inception Score.
+            </p>
+            <a href="https://github.com/CTaylah/vae_gan" class="btn btn-project" target="_blank">
+                Source Code
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <img
+                src="static/img/michiGAN_figure.webp"
+                class="img-fluid project-image"
+                alt="MNIST Michi-GAN"
+            >
+        </div>
+    </div>
+
+    <div class="row mb-4 project-item">
+        <div class="col-md-8 col-sm-12 project-item">
+            <h5 class="card-title">Lean-AE</h5>
+            <p class="card-text">
+                A from-scratch C++ implementation of a variational autoencoder for compressing and
+                reconstructing image data. Implements ADAM to reduce convergence time and uses
+                OpenMP multithreading to boost performance. Later ported to Python to test
+                adversarial feedback techniques.
+            </p>
+            <a href="https://github.com/CTaylah/NeuralNetwork" class="btn btn-project" target="_blank">
+                Source Code
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <img
+                src="static/img/NeuralNetworkScene_ManimCE_v0.19.0.gif"
+                class="img-fluid project-image"
+                alt="Autoencoder Visualization"
+            >
+        </div>
+    </div>
+</div>
+
     <footer class="footer">
         <div class="container">
             <p class="footer-links">
