@@ -29,6 +29,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
 </head>
 
 <body>
@@ -53,10 +54,10 @@
             </h1>
             <div class="subtext">
                 <h1>
-                    I'm a computer science student.
+                    I'm a software engineer and ML researcher.
                 </h1>
             </div>
-            <button class="btn btn-primary" id="scroll-button">Check me out!</button>
+            <button class="btn btn-primary" id="scroll-button">Learn More</button>
         </div>
     </div>
 
@@ -68,9 +69,9 @@
                     <img src="static/img/Boricana.jpg" class="img-fluid rounded about-me-image" alt="About Me">
                 </div>
                 <div class="col-md-8 col-sm-12 about-me-text">
-                    <p>I'm a twenty year old researcher, student, artist, and amateur bread baker. I've been writing code since 8th grade.</p>
+                    <p>I'm a twenty-one year old programmer, artist, and bread baker. I've been writing code since 8th grade. My favorite programming languages are Python 🐍, C++ <img src="static/img/cpp_logo.png" alt="C++ Logo" style="width: 30px; height: 30px;"> and Rust 🦀.</p>
+                    <p>Although most of my work is in AI/ML, I'm interested in all things in the realm of computer science. I have some experience working with both front and backend development, Raspbery PIs, and OpenGL graphics programiing!</p>
                     <p>I'm currently working in a research lab under <a href="https://scholar.google.com/citations?user=l9qurb4AAAAJ&hl=en" target="_blank" class="inline">Dr. Zachary Debruine</a>, where we develop models to analyze single-cell RNA sequencing data.</p>
-                    <p>My favorite programming languages are Python 🐍, C++ <img src="static/img/cpp_logo.png" alt="C++ Logo" style="width: 30px; height: 30px;"> and Rust 🦀.</p>
                     <a href="https://github.com/CTaylah" class="btn btn-secondary" target="_blank">GitHub</a>
                     <a href="https://www.linkedin.com/in/cardell-taylor/" class="btn btn-secondary" target="_blank">LinkedIn</a>
                     <a href="static/Website_Resume.pdf" class="btn btn-secondary" target="_blank">Resume</a>
@@ -79,16 +80,15 @@
             </div>
         </div>
     </div>
-    <div class="container mt-5 projects-section">
+<div class="container mt-5 projects-section">
     <h3 class="featured-projects">Projects</h3>
 
     <div class="row mb-4 project-item">
         <div class="col-md-8 col-sm-12 project-item">
-            <h5 class="card-title">Second Mind</h5>
+            <h5 class="card-title">Second Mind <span class="text-muted">(WIP)</span></h5>
             <p class="card-text">
                A local LLM assistant for retrieving information from Obsidian/Markdown notes. It uses retrieval-augmented generation to enable context-aware querying. It locally hosting your own LLM model via Ollama to preserve privacy.
             </p>
-            <a href="" class="btn btn-project" target="_blank">WIP</a>
         </div>
         <div class="col-md-4 col-sm-12">
             <img src="static/img/secondmind.png" class="img-fluid rounded" alt="Sim-Vest">
@@ -97,13 +97,15 @@
 
     <div class="row mb-4 project-item">
         <div class="col-md-8 col-sm-12 project-item">
-            <h5 class="card-title">Sim-Vest</h5>
+            <h5 class="card-title">
+                Sim-Vest
+                <a href="https://github.com/CTaylah/sim-vest" target="_blank" class="code-icon" title="View source code">&lt;/&gt;</a>
+            </h5>
             <p class="card-text">
                 A financial investment simulator written in Rust. Allows you to create portfolios,
                 make trades, and see your performance over time. It uses the Financial Modeling Prep
                 (FMP) API to fetch stock prices in real time.
             </p>
-            <a href="" class="btn btn-project" target="_blank">Source Code</a>
         </div>
         <div class="col-md-4 col-sm-12">
             <img src="static/img/simvest.jpg" class="img-fluid rounded" alt="Sim-Vest">
@@ -115,10 +117,9 @@
             <h5 class="card-title">Capstone - SysML v2 Export Tool</h5>
             <p class="card-text">
                 Working in the Agile project framework, assisted Array of Engineers by updating their
-                tool for modeling logical requirements. We added the ability to export data in the
+                web app tool for modeling logical requirements. We added the ability to export data in the
                 SysML v2 format, a universal language for modeling system requirements.
             </p>
-            <a href="" class="btn btn-project" target="_blank">Code not available</a>
         </div>
         <div class="col-md-4 col-sm-12">
             <img
@@ -131,16 +132,16 @@
 
     <div class="row mb-4 project-item">
         <div class="col-md-8 col-sm-12 project-item">
-            <h5 class="card-title">Single-cell Integration Research</h5>
+            <h5 class="card-title">
+                Single-cell Integration Research
+                <a href="https://github.com/zdebruine/MMVAE" target="_blank" class="code-icon" title="View source code">&lt;/&gt;</a>
+            </h5>
             <p class="card-text">
                 As years go by, the cost of collecting single-cell data gets lower and lower.
-                However, we still lack solid methods for pooling this data together (integration).
-                The goal of my research is to develop a deep learning model to accomplish this,
+                However, we still lack solid methods for pooling this data together in aggregate.
+                The goal of my research is to develop a deep learning methods to pool together information across several datasest,
                 with an emphasis on integrating across species.
             </p>
-            <a href="https://github.com/zdebruine/MMVAE" class="btn btn-project" target="_blank">
-                Source Code
-            </a>
         </div>
         <div class="col-md-4 col-sm-12">
             <img src="static/img/mmvae.png" class="img-fluid rounded" alt="MMVAE">
@@ -149,17 +150,17 @@
 
     <div class="row mb-4 project-item">
         <div class="col-md-8 col-sm-12 project-item">
-            <h5 class="card-title">MNIST Michi-GAN</h5>
+            <h5 class="card-title">
+                MNIST Michi-GAN
+                <a href="https://github.com/CTaylah/vae_gan" target="_blank" class="code-icon" title="View source code">&lt;/&gt;</a>
+            </h5>
             <p class="card-text">
                 Exploration of the MichiGAN framework for generating disentangled representations
                 of the MNIST dataset, as detailed in the paper
-                “MichiGAN: sampling from disentangled representations of single-cell data using
-                generative adversarial networks”. Performance was evaluated using Fréchet Inception
+                "MichiGAN: sampling from disentangled representations of single-cell data using
+                generative adversarial networks". Performance was evaluated using Fréchet Inception
                 Distance (FID) and Inception Score.
             </p>
-            <a href="https://github.com/CTaylah/vae_gan" class="btn btn-project" target="_blank">
-                Source Code
-            </a>
         </div>
         <div class="col-md-4 col-sm-12">
             <img
@@ -172,16 +173,16 @@
 
     <div class="row mb-4 project-item">
         <div class="col-md-8 col-sm-12 project-item">
-            <h5 class="card-title">Lean-AE</h5>
+            <h5 class="card-title">
+                Lean-AE
+                <a href="https://github.com/CTaylah/NeuralNetwork" target="_blank" class="code-icon" title="View source code">&lt;/&gt;</a>
+            </h5>
             <p class="card-text">
                 A from-scratch C++ implementation of a variational autoencoder for compressing and
                 reconstructing image data. Implements ADAM to reduce convergence time and uses
                 OpenMP multithreading to boost performance. Later ported to Python to test
                 adversarial feedback techniques.
             </p>
-            <a href="https://github.com/CTaylah/NeuralNetwork" class="btn btn-project" target="_blank">
-                Source Code
-            </a>
         </div>
         <div class="col-md-4 col-sm-12">
             <img
